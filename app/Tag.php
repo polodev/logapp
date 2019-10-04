@@ -19,8 +19,8 @@ class Tag extends Model
   {
     return $this->belongsToMany( Post::class )->where( 'type', 'gist' );
   }
-  public function tuts()
+  public function tutorials()
   {
-    return $this->belongsToMany( Post::class )->where( 'type', 'tut' );
+    return $this->belongsToMany( Post::class )->where( 'type', 'tutorial' );
   }
 }
