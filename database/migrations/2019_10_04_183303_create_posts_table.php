@@ -18,6 +18,8 @@ class CreatePostsTable extends Migration
             $table->text('title');
             $table->text('content_markdown')->nullable();
             $table->text('content_html')->nullable();
+            $table->date('date')->nullable();
+            $table->string('status')->default('published');
             $table->string('type')->default('log');
             $table->bigInteger('user_id');
             $table->timestamps();
